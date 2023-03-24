@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "NoriBlox Music Edition",
+  "version": "0.0.1",
+  "description": "2023.03.23: Lead to a musical step on ROBLOX's website. Add a simply music and play it. Thanks who is using this extension, for now... Update will release if we can release!",
+  "permissions": ["activeTab", "chrome://favicon/"],
+  "icons": {
+    "16": "NoriBlox Music Edition 16x16",
+    "48": "NoriBlox Music Edition 48x48",
+    "128": "NoriBlox Music Edition 128x128"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' chrome-extension-resource:; object-src 'self'"
+}
